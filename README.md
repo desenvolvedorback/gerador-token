@@ -17,6 +17,11 @@ Na sua máquina (Dev): Você escreve seu código normal. Antes de subir para a n
 
 Na Nuvem (Deploy): Você sobe apenas o "Bloco Verificador" (a Barreira) no topo, e logo abaixo dele, a massa de bytes ilegível.
 
+
+depois de passar do compilador.py passe nesse script no terminal:
+
+pyarmor pack -e " --onefile" projeto_blindado.py
+
 Tempo de Execução (Runtime + Validação Ativa): Quando o servidor inicia, o bloco do topo faz uma requisição para verificar o status atual da chave. Se estiver active, ele usa o token para descriptografar a massa de bytes direto na memória RAM e executa.
 
 O Efeito "Matar Processo" (Kill-Switch): Para o código parar de funcionar na hora se você deletar a chave no Termux, o bloco verificador cria uma Thread (um processo paralelo) que fica consultando o status a cada X minutos. Se você mudar para desativada ou excluida no celular, esse processo paralelo mata a aplicação na nuvem imediatamente (sys.exit()).
