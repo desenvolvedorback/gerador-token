@@ -1,0 +1,5 @@
+pip install flask pyjwt
+
+  pip install flask pyjwt cryptography
+
+  pip install jwt
