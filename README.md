@@ -19,3 +19,9 @@ Na sua máquina (Dev): Você escreve seu código normal. Antes de subir para a n
 depois de passar do compilador.py passe nesse script no terminal:
 
 pyarmor pack -e " --onefile" projeto_blindado.py
+
+
+````
+SE USAR ME DE OS CREDITOS!
+````
+By Davi Leonardo
